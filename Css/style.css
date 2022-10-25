@@ -1,0 +1,250 @@
+*{ 
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none;
+    font-family:  Calibri;
+}
+/* 
+Margin = Tirando as margem de 
+padding = tirando as margem dos link (Catalaog,About e Feature)
+box-sizing = tirando a borda do botão login 'Buton'
+*/
+
+/*
+    Definando cores para ser utilizadas 
+*/
+:root{
+    --laranja: #f78b00;
+    --azul: #00285f;
+    --cinza: #ededed;
+}
+
+/*
+  width = largura de 100  
+  overflow - x: hidden = tirando a barra de rolagem 
+*/
+html body{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/*
+    background: var(root) =Colando cor usando o root
+    larfura de 100 (width)
+    altura da cor de 500px(height)
+    
+*/
+header{
+    width: 100%;
+    height: 500px;
+    background: var(--laranja);
+}
+/*
+    Pegando a Div'content' 
+    e ajustandando a escrita para 
+    ficar alinhado tanto em celular como 
+    tablet.
+*/
+.content{
+    max-width: 1000px;
+    min-width: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+/*
+    Estabelendo onde meus link estarão localizado
+*/
+nav{
+    width: 100%; /* Largura Maxima  */
+    height: 125px; /* Altura minima  */
+    display: flex;
+    flex-direction: row;
+    align-items:  center;
+    justify-content: space-between;
+}
+/*
+    Modicando O texto 'DEVSUPERIOR'
+*/
+.brand{
+    font-size: 24px;
+    color: var(--azul);
+    cursor: pointer; /* Deixando o texto Clicavel */
+
+/*
+    Modificando os link que esta como lista no HMTL
+*/
+}
+nav ul{
+    display: flex;
+    flex-direction:  row;
+}
+nav ul li{
+    list-style: none;
+    padding: 10px;
+    cursor: pointer;
+}
+nav ul li a:hover{
+    color: #001430;/*Mudando a cor dos link*/
+}
+/* Modificando o 'login' */
+nav ul button{ 
+    background-color: transparent;
+    font-size: large; 
+    border: 1px; 
+    color: var(--azul);
+    cursor: pointer;
+    font-weight: bold;
+    padding: 8px 40px; /*Colocando um espacamento*/
+    font-weight: 4px;
+    border-radius: 4px;/*Deixando a borda arredondada*/
+}
+/* Colando Uma trancição no 'Login' */
+nav ul button:hover{
+        
+        background: var(--azul);
+        color: #f78b00;
+        font-weight: bold;
+        font-size: large;
+}    
+/* Estabelencendo o tamanho do bloco azul. */
+.content .header-block{
+        max-width: 1000px;
+        min-width: 300px;
+        height:  450px;
+        background: var(--azul);
+        border-radius: 8px;
+        box-shadow: #001430;
+        position: relative;
+        z-index: 10;
+        padding: 10px;
+}
+/*Colocando a imagem do carro no tamnho correto*/
+.header-block img{
+    width: 50%;
+    position: absolute;
+    right: 2%;
+    bottom: 2%;
+    
+}
+/*Modificando o text*/
+.header-block text{
+    position: absolute;
+    bottom: 30%;
+    left: 15%;
+}
+/*Modificando 'o carro perfeito para você' colocando ele branco e na esquerda*/
+.header-block h2{
+    color: #ededed;
+    margin-bottom: 20px;
+    text-align: center;
+
+/*Modificando O paragrafo*/    
+}
+.header-block .text p{
+    color: #ededed;
+    text-align:  center;
+}    
+/*Css no meu catalago*/
+
+/*Colocando uma largura maxima no meu catalago*/
+section .catalog{
+    width: 100vw;
+    padding: 100px;
+}
+/*Colocando O quadrado cinza debaixo do azul*/
+section .card{
+    width: 980px;
+    height: 150px;
+    background: var(--cinza);
+    border-radius: 8px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+/*Tirando a barda do 'Escolha seu nome'*/
+.search{
+    width: 700px;
+    height: 50px;
+    border: none;
+
+}
+/*Modificando o Seach'Procurar'*/
+.o-button{
+    width: 200px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 24px;
+   
+}
+/*Colocando o Seach Azul, com a letra laranja*/
+.o-button:hover{
+    width: 200px;
+    height: 50px;
+    background: var(--azul);
+    color: #f78b00;
+}
+/**/
+.title-imag{
+    margin-top: 200px;
+    padding-bottom: 20px;
+}
+/* Colocando Um carro do lado do outro, e colcando o fundo cinza*/
+.weapper{
+    max-width: 400px;
+    height: 100%;
+    display: inline-block;
+    padding-top: 100px;
+    
+}
+/*Dando os espaçãos entre cada uma das imagems*/
+.car-items{
+    height: 400px;
+    background: var(--cinza);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+/*Mudando o Botão do 'Eu quero esse'*/
+.button{
+    height: 70%;
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;/*Colocando em negritro*/
+    background: var(--azul);
+    color: #ededed;
+}
+/*Quando passa o mause ficar com a letra laranja*/
+.button:hover{
+    height: 70%;
+    width: 100%;
+    background: var(--azul);
+    color: #f78b00;
+    cursor: pointer;
+}
+/*Mudando o tamanho do carro*/
+.car-items img{
+    width: 85%;
+}
+/*Colocando o texto 'Audi' No centro*/
+.car-items h3{
+    text-align: center;
+}
+/*Modificando o para dentro de cada quadrado onde estão as  Audi*/
+.car-items p{
+    display: flex;
+    text-align: center;
+    font-style: italic;
+    color: #adafb3;
+}
